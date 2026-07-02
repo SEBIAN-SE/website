@@ -1,267 +1,259 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SEBIAN | Configured for Compliance. Built for Defense.</title>
+<title>SEBIAN | Configured for Compliance. Built for Defense.</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+:root{
+    --bg:#0b1220;
+    --card:#162238;
+    --text:#ffffff;
+    --muted:#cbd5e1;
+    --accent:#dc2626;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #0b1220;
-            color: #ffffff;
-            line-height: 1.7;
-        }
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #0b1220, #18263d);
-            padding: 80px 20px;
-            text-align: center;
-        }
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#0b1220,#18263d);
+}
 
-        .logo {
-            width: 240px;
-            max-width: 80%;
-            margin-bottom: 20px;
-        }
+.logo{
+    width:280px;
+    max-width:90%;
+    margin-bottom:20px;
+}
 
-        .company {
-            color: #ef4444;
-            font-size: 0.9rem;
-            letter-spacing: 3px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
+.company{
+    color:var(--accent);
+    font-size:.9rem;
+    letter-spacing:3px;
+    font-weight:700;
+    margin-bottom:15px;
+}
 
-        h1 {
-            font-size: 3.2rem;
-            line-height: 1.2;
-            margin-bottom: 25px;
-        }
+.hero h1{
+    font-size:3.5rem;
+    line-height:1.2;
+    margin-bottom:25px;
+}
 
-        .hero-text {
-            max-width: 800px;
-            margin: auto;
-            color: #cbd5e1;
-            font-size: 1.15rem;
-        }
+.hero p{
+    max-width:850px;
+    color:var(--muted);
+    font-size:1.15rem;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 35px;
-            padding: 15px 32px;
-            background: #dc2626;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 32px;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:700;
+}
 
-        .btn:hover {
-            background: #b91c1c;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 90px 20px;
-        }
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+}
 
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 50px;
-        }
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:12px;
+}
 
-        .card {
-            background: #162238;
-            padding: 30px;
-            border-radius: 14px;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
+.card h3{
+    margin-bottom:15px;
+}
 
-        .card h3 {
-            margin-bottom: 15px;
-            color: white;
-        }
+.card p{
+    color:var(--muted);
+}
 
-        .card p {
-            color: #cbd5e1;
-        }
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
 
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
+.about p{
+    color:var(--muted);
+    margin-bottom:20px;
+}
 
-        .about p {
-            color: #cbd5e1;
-            margin-bottom: 20px;
-        }
+.contact{
+    text-align:center;
+}
 
-        .contact {
-            text-align: center;
-        }
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+    font-size:1.2rem;
+    font-weight:600;
+}
 
-        .contact p {
-            font-size: 1.1rem;
-        }
+footer{
+    background:#050911;
+    color:#94a3b8;
+    text-align:center;
+    padding:35px 20px;
+}
 
-        .contact a {
-            color: #ef4444;
-            text-decoration: none;
-            font-weight: 600;
-        }
+@media(max-width:768px){
 
-        footer {
-            background: #050911;
-            color: #94a3b8;
-            text-align: center;
-            padding: 35px 20px;
-        }
+    .hero h1{
+        font-size:2.2rem;
+    }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
+    .hero p{
+        font-size:1rem;
+    }
 
-            .hero-text {
-                font-size: 1rem;
-            }
-        }
-    </style>
+}
+</style>
+
 </head>
-
 <body>
 
-    <section class="hero">
+<section class="hero">
 
-        <img src="SEBIAN-LOGO.png" alt="SEBIAN Logo" class="logo">
+    <img src="SEBIAN-LOGO.png" alt="SEBIAN Logo" class="logo">
 
-        <div class="company">
-            SEBIAN SECURITY CONSULTING
+    <div class="company">
+        SEBIAN SECURITY CONSULTING
+    </div>
+
+    <h1>
+        Configured for Compliance.<br>
+        Built for Defense.
+    </h1>
+
+    <p>
+        Onafhankelijke security audits voor organisaties die zekerheid willen
+        over hun identiteits-, netwerk- en toegangsbeveiliging.
+        Gespecialiseerd in Entra ID en Fortinet Firewall assessments.
+    </p>
+
+    <a href="mailto:info@sebian.be" class="btn">
+        Vraag een kennismakingsgesprek aan
+    </a>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Audit Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Entra ID Audit</h3>
+            <p>
+                Analyse van MFA, Conditional Access, privileged roles,
+                identity governance en toegangsbeveiliging.
+            </p>
         </div>
 
-        <h1>
-            Configured for Compliance.<br>
-            Built for Defense.
-        </h1>
-
-        <p class="hero-text">
-            Onafhankelijke security audits voor organisaties die zekerheid willen
-            over hun identiteit-, netwerk- en toegangsbeveiliging.
-            Gespecialiseerd in Entra ID en Fortinet Firewall assessments.
-        </p>
-
-        <a class="btn" href="mailto:info@sebian.be">
-            Vraag een kennismakingsgesprek aan
-        </a>
-
-    </section>
-
-    <section class="container">
-
-        <h2 class="section-title">Audit Services</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Entra ID Audit</h3>
-                <p>
-                    Diepgaande analyse van MFA, Conditional Access,
-                    privileged roles, identity governance en
-                    toegangsbeveiliging.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Fortinet Firewall Audit</h3>
-                <p>
-                    Evaluatie van firewallconfiguraties,
-                    security policies, netwerksegmentatie,
-                    VPN-configuraties en logging.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Security Posture Assessment</h3>
-                <p>
-                    Onafhankelijke beoordeling van bestaande
-                    beveiligingsmaatregelen met concrete
-                    verbeteradviezen.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Compliance Assessment</h3>
-                <p>
-                    Technische evaluaties die organisaties helpen
-                    om beveiligingscontroles te valideren en
-                    compliance-inspanningen te ondersteunen.
-                </p>
-            </div>
-
+        <div class="card">
+            <h3>Fortinet Firewall Audit</h3>
+            <p>
+                Evaluatie van firewall policies, segmentatie,
+                VPN-configuraties, logging en security best practices.
+            </p>
         </div>
 
-    </section>
-
-    <section class="container">
-
-        <h2 class="section-title">About SEBIAN</h2>
-
-        <div class="about">
-
+        <div class="card">
+            <h3>Security Posture Assessment</h3>
             <p>
-                SEBIAN is een onafhankelijke cybersecurity consultancy
-                gespecialiseerd in technische security audits.
+                Onafhankelijke beoordeling van bestaande
+                beveiligingsmaatregelen met concrete verbeteradviezen.
             </p>
+        </div>
 
+        <div class="card">
+            <h3>Compliance Assessment</h3>
             <p>
-                Met expertise in Microsoft Entra ID en Fortinet
-                helpt SEBIAN organisaties risico's identificeren,
-                configuraties valideren en hun beveiligingsniveau
-                objectief evalueren.
+                Evaluatie van technische beveiligingscontroles
+                ter ondersteuning van compliance- en governancevereisten.
             </p>
+        </div>
 
-            <p>
-                Geen generieke rapporten.
-                Geen vendor lock-in.
-                Praktische aanbevelingen gebaseerd op bewezen
-                security best 
-    </section>
+    </div>
 
-    <section class="container contact">
+</section>
 
-        <h2 class="section-title">Contact</h2>
+<section class="container">
+
+    <h2 class="section-title">About SEBIAN</h2>
+
+    <div class="about">
 
         <p>
-            📧 info@sebian.beinfo@sebian.be</a>
+            SEBIAN is een onafhankelijke cybersecurity consultancy
+            gespecialiseerd in technische security audits.
         </p>
 
-    </section>
+        <p>
+            Met expertise in Microsoft Entra ID en Fortinet helpt SEBIAN
+            organisaties risico's identificeren, configuraties valideren
+            en hun beveiligingsniveau objectief evalueren.
+        </p>
 
-    <footer>
-        © 2026 SEBIAN · Configured for Compliance. Built for Defense.
-    </footer>
+        <p>
+            Geen generieke rapporten.
+            Geen vendor lock-in.
+            Praktische aanbevelingen gebaseerd op bewezen security best practices.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="container contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <p>
+        <a href="mailto:info@sebian.be">6 SEBIAN · Configured for Compliance. Built for Defense.
+</footer>
 
 </body>
 </html>
