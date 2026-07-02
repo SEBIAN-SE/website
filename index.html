@@ -4,19 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SEBIAN | Configured for Compliance. Built for Defense.</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
-:root{--bg:#0b1220;--card:#162238;--text:#fff;--muted:#cbd5e1;--accent:#dc2626}
+:root{--bg:#0b1220;--card:#162238;--text:#fff;--muted:#cbd5e1;--accent:#dc2626;--linkedin:#0A66C2}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
 .hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;background:linear-gradient(135deg,#0b1220,#18263d)}
-.logo{width:280px;max-width:90%;margin-bottom:20px}
-.company{color:var(--accent);font-size:.9rem;letter-spacing:3px;font-weight:700;margin-bottom:15px}
+.logo{width:280px;max-width:90%;margin-bottom:20px}.company{color:var(--accent);letter-spacing:3px;font-weight:700;margin-bottom:15px}
 h1{font-size:3.5rem;line-height:1.2;margin-bottom:25px}.hero p{max-width:850px;color:var(--muted);font-size:1.15rem}
 .btn{display:inline-block;margin-top:35px;padding:15px 32px;background:var(--accent);color:#fff;text-decoration:none;border-radius:10px;font-weight:700}
 .container{max-width:1200px;margin:auto;padding:90px 20px}.section-title{text-align:center;font-size:2rem;margin-bottom:50px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}.card{background:var(--card);padding:30px;border-radius:12px}.card p,.about p{color:var(--muted)}
-.card h3{margin-bottom:15px}.about{max-width:900px;margin:auto;text-align:center}.about p{margin-bottom:20px}
-.contact{text-align:center}.contact a{color:var(--accent);text-decoration:none;font-size:1.2rem;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}.card{background:var(--card);padding:30px;border-radius:12px}
+.card p,.about p{color:var(--muted)}.card h3{margin-bottom:15px}.about{max-width:900px;margin:auto;text-align:center}.about p{margin-bottom:20px}
+.contact{text-align:center}.contact-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.contact-links a{color:white;text-decoration:none;background:#162238;padding:12px 18px;border-radius:10px;display:flex;align-items:center;gap:10px}
+.linkedin-icon{width:20px;height:20px;fill:var(--linkedin)}
 footer{background:#050911;color:#94a3b8;text-align:center;padding:35px 20px}
 @media(max-width:768px){h1{font-size:2.2rem}.hero p{font-size:1rem}}
 </style>
@@ -48,7 +51,13 @@ footer{background:#050911;color:#94a3b8;text-align:center;padding:35px 20px}
 </section>
 <section class="container contact">
 <h2 class="section-title">Contact</h2>
-<p><a href="mailto:info@sebian.be">info@sebian.be</a></p>
+<div class="contact-links">
+<a href="mailto:info@sebian.be">📧 info@sebian.be</a>
+<a href="https://be.linkedin.com/in/sebastian-selis-75a8121a1" target="_blank">
+<svg class="linkedin-icon" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 17V10.66H6.26V17H8.34M7.3 9.8A1.2 1.2 0 1 0 7.3 7.4A1.2 1.2 0 0 0 7.3 9.8M17.74 17V13.5C17.74 11.63 16.74 10.5 14.96 10.5C14.1 10.5 13.41 10.97 13 11.5V10.66H10.92V17H13V13.47C13 12.54 13.18 11.63 14.33 11.63C15.46 11.63 15.48 12.69 15.48 13.53V17H17.74Z"/></svg>
+LinkedIn
+</a>
+</div>
 </section>
 <footer>© 2026 SEBIAN · Configured for Compliance. Built for Defense.</footer>
 </body>
