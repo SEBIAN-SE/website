@@ -476,11 +476,12 @@
   .page-banner{
     background:var(--navy);
     color:var(--off-white);
-    padding:64px 24px 56px;
+    padding:64px 0 56px;
   }
   .page-banner-inner{
     max-width:1180px;
     margin:0 auto;
+    padding:0 24px;
   }
   .page-banner h1{
     font-family:var(--display);
