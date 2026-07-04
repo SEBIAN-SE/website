@@ -41,7 +41,7 @@
 <main>
   <section class="section">
     <div class="intro-block" style="max-width:70ch">
-      <p>Vier diensten, elk met een duidelijk afgebakende scope. Geen generalistisch advies, geen productverkoop. Enkel technische audits waar ik de expertise voor heb, met een concreet, bruikbaar resultaat.</p>
+      <p>Vier diensten, elk met een duidelijk afgebakende scope. Geen generalistisch advies, geen productverkoop, enkel technische audits waar ik de expertise voor heb, met een concreet en bruikbaar resultaat.</p>
     </div>
 
     <div class="section-head">
@@ -52,25 +52,132 @@
       <span class="count">4 diensten</span>
     </div>
 
-    <div class="index-row">
-      <span class="index-code">A—01</span>
-      <span class="index-title">Entra ID &amp; Active Directory Audit</span>
-      <span class="index-desc">Analyse van MFA, Conditional Access, privileged roles en identity governance, met expert-interpretatie en een geprioriteerde remediatie-roadmap. Bevindingen worden gemapt op MITRE ATT&amp;CK en geprioriteerd op impact en misbruikpotentieel.</span>
+    <div class="service-block">
+      <div class="service-head">
+        <span class="service-code">A—01</span>
+        <span class="service-title">Entra ID &amp; Active Directory Audit</span>
+      </div>
+
+      <span class="service-label">Wat is het</span>
+      <p>Een technische audit van uw identiteitsomgeving: Microsoft Entra ID en Active Directory, gericht op authenticatie, toegangsbeheer, geprivilegieerde accounts en configuraties die standaard onveilig staan.</p>
+
+      <span class="service-label">Wat u krijgt</span>
+      <p>Een gedetailleerd rapport met de bevindingen, elk voorzien van een severity-score (kritiek/gemiddeld/laag/informatief), aangevuld met een beknopte managementsamenvatting met de belangrijkste prioriteiten.</p>
+
+      <span class="service-label">Voordelen</span>
+      <ul class="service-list">
+        <li>Misconfiguraties die standaard onveilig staan (bv. legacy authentication, ontbrekende MFA op geprivilegieerde accounts) worden expliciet gemarkeerd</li>
+        <li>Concreet en uitvoerbaar advies per bevinding, in plaats van abstracte aanbevelingen</li>
+        <li>Gebaseerd op patronen uit de dagelijkse SecOps-praktijk, niet enkel theorie</li>
+      </ul>
+
+      <span class="service-label">Werkwijze</span>
+      <ol class="service-steps">
+        <li>Kort intakegesprek om scope en toegang af te stemmen</li>
+        <li>De audit zelf: technische controle van authenticatie, Conditional Access, rollen en rechten</li>
+        <li>Rapportage en bespreking, met een geprioriteerde roadmap voor opvolging</li>
+      </ol>
+
+      <div class="service-why">
+        <span class="service-label" style="margin-top:0">Waarom nu</span>
+        <p>Identiteit is meestal de eerste stap bij een inbraak. Een verkeerd geconfigureerd Conditional Access-beleid of een vergeten legacy-protocol kan MFA volledig omzeilen, vaak zonder dat iemand het weet tot het te laat is.</p>
+      </div>
     </div>
-    <div class="index-row">
-      <span class="index-code">A—02</span>
-      <span class="index-title">Fortinet Firewall Audit</span>
-      <span class="index-desc">Technische audit van firewallconfiguraties, netwerksegmentatie, VPN-toegang, logging en operationele beheerprocessen. Gespecialiseerd in Fortinet, met aanvullende expertise in andere enterprise firewallplatformen zoals Palo Alto Networks.</span>
+
+    <div class="service-block">
+      <div class="service-head">
+        <span class="service-code">A—02</span>
+        <span class="service-title">Fortinet Firewall Audit</span>
+      </div>
+
+      <span class="service-label">Wat is het</span>
+      <p>Een technische controle van uw Fortinet-firewallomgeving: policies, netwerksegmentatie, VPN-configuraties en logging, getoetst aan bewezen best practices.</p>
+
+      <span class="service-label">Wat u krijgt</span>
+      <p>Een overzicht van de huidige configuratie met bevindingen per onderdeel, geordend naar risico, en concrete aanbevelingen om de configuratie te verstevigen.</p>
+
+      <span class="service-label">Voordelen</span>
+      <ul class="service-list">
+        <li>Overmatig brede of verouderde regels worden blootgelegd</li>
+        <li>Zicht op segmentatie: kan een gecompromitteerd toestel zich vrij door het netwerk bewegen?</li>
+        <li>Specifiek Fortinet-vakmanschap, geen generieke netwerkscan</li>
+      </ul>
+
+      <span class="service-label">Werkwijze</span>
+      <ol class="service-steps">
+        <li>Overzicht van de huidige topologie en configuratie-export</li>
+        <li>Analyse van policies, segmentatie, VPN en logging</li>
+        <li>Rapport en bespreking van prioritaire aanpassingen</li>
+      </ol>
+
+      <div class="service-why">
+        <span class="service-label" style="margin-top:0">Waarom nu</span>
+        <p>Regels stapelen zich op na jaren van kleine aanpassingen. Een firewall die "gewoon werkt" is niet hetzelfde als een firewall die correct is geconfigureerd. De FortiBleed-campagne (juni 2026) toonde dat aan: wereldwijd raakten tienduizenden Fortinet-firewalls compromitteerbaar door zwakke wachtwoorden en ontbrekende MFA, ongeacht of het beheer intern gebeurde of was uitbesteed aan een externe IT-partner. Uitbesteed beheer is geen garantie voor correcte hardening, een onafhankelijke audit legt dat bloot.</p>
+      </div>
     </div>
-    <div class="index-row">
-      <span class="index-code">A—03</span>
-      <span class="index-title">Security Posture Assessment</span>
-      <span class="index-desc">Consolidatie van de identity- en netwerkaudits tot één geprioriteerd risicorapport voor management met concrete verbeteradviezen in plaats van losse technische documenten per audit.</span>
+
+    <div class="service-block">
+      <div class="service-head">
+        <span class="service-code">A—03</span>
+        <span class="service-title">Security Posture Assessment</span>
+      </div>
+
+      <span class="service-label">Wat is het</span>
+      <p>Geen aparte technische scan, maar de synthese van de identiteits- en netwerkaudit tot één samenhangend, geprioriteerd risicorapport voor management.</p>
+
+      <span class="service-label">Wat u krijgt</span>
+      <p>Eén document in plaats van meerdere losse technische rapporten, met een duidelijke rangschikking van wat eerst moet worden aangepakt, en waarom.</p>
+
+      <span class="service-label">Voordelen</span>
+      <ul class="service-list">
+        <li>Management krijgt inzicht zonder door technische details te moeten spitten</li>
+        <li>Prioriteiten gebaseerd op impact en misbruikpotentieel, niet op toevallige volgorde</li>
+        <li>Bruikbaar als basis voor budgettering of interne besluitvorming</li>
+      </ul>
+
+      <span class="service-label">Werkwijze</span>
+      <ol class="service-steps">
+        <li>Consolidatie van de bevindingen uit de uitgevoerde audits</li>
+        <li>Risicoprioritering op basis van impact en misbruikpotentieel</li>
+        <li>Presentatie aan management met concrete vervolgstappen</li>
+      </ol>
+
+      <div class="service-why">
+        <span class="service-label" style="margin-top:0">Waarom nu</span>
+        <p>Technische bevindingen alleen overtuigen een directie zelden. Een helder, geprioriteerd overzicht doet dat wel.</p>
+      </div>
     </div>
-    <div class="index-row">
-      <span class="index-code">A—04</span>
-      <span class="index-title">NIS2 / CyberFundamentals Gap Assessment</span>
-      <span class="index-desc">Evaluatie van technische beveiligingscontroles tegenover het CyFun-kader (Basic/Important), als voorbereiding op de NIS2-verplichtingen voor Belgische organisaties. Geen certificering, maar een heldere nulmeting van waar u vandaag staat.</span>
+
+    <div class="service-block">
+      <div class="service-head">
+        <span class="service-code">A—04</span>
+        <span class="service-title">NIS2 / CyberFundamentals Gap Assessment</span>
+      </div>
+
+      <span class="service-label">Wat is het</span>
+      <p>Een evaluatie van uw huidige technische beveiligingscontroles tegenover het CyberFundamentals-kader (Basic/Important), als voorbereiding op de NIS2-verplichtingen.</p>
+
+      <span class="service-label">Wat u krijgt</span>
+      <p>Een concreet overzicht van waar u vandaag staat tegenover de CyFun-controls, met een lijst van de belangrijkste werkpunten richting het gekozen niveau.</p>
+
+      <span class="service-label">Voordelen</span>
+      <ul class="service-list">
+        <li>Duidelijkheid vóór een eventuele formele certificering nodig is</li>
+        <li>Vermijdt verrassingen bij een latere audit door een geaccrediteerde instantie</li>
+        <li>Technische input rechtstreeks herbruikbaar voor uw compliance-dossier</li>
+      </ul>
+
+      <span class="service-label">Werkwijze</span>
+      <ol class="service-steps">
+        <li>Bepalen van het toepasselijke niveau (Basic of Important) op basis van sector en grootte</li>
+        <li>Technische evaluatie van bestaande controles tegenover het CyFun-kader</li>
+        <li>Rapport met gap-analyse en concrete stappen richting conformiteit</li>
+      </ol>
+
+      <div class="service-why">
+        <span class="service-label" style="margin-top:0">Waarom nu</span>
+        <p>Voor essentiële entiteiten liep de CCB-zelfevaluatiedeadline van 18 april 2026 al af. Voor de meeste andere bedrijven binnen scope neemt de druk toe. Vroeg starten voorkomt haasten onder tijdsdruk.</p>
+      </div>
     </div>
 
     <p style="margin-top:48px"><a href="contact.html" style="font-family:var(--mono);font-size:0.85rem;color:var(--red);text-decoration:none;letter-spacing:0.03em">Een assessment aanvragen →</a></p>
@@ -79,7 +186,8 @@
 
 <footer>
   <div class="footer-inner">
-    <span>© 2026 SEBIAN — Configured for Compliance. Built for Defense.</span>
+    <span>© 2026 SEBIAN · Configured for Compliance. Built for Defense.</span>
+    <span>OOST-VLAANDEREN, BELGIË</span>
   </div>
 </footer>
 
