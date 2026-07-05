@@ -322,7 +322,7 @@
     justify-content:space-between;
     align-items:flex-end;
     gap:24px;
-    margin-bottom:52px;
+    margin-bottom:0;
     border-bottom:1px solid rgba(22,29,41,0.15);
     padding-bottom:20px;
   }
@@ -470,7 +470,7 @@
   }
   .ticker b{color:#8fa0ba;font-weight:500}
 
-  .intro-block{max-width:70ch;margin-bottom:64px}
+  .intro-block{max-width:70ch;margin-bottom:40px}
   .intro-block p{font-size:1.05rem;color:var(--ink);margin-bottom:18px}
   .intro-block p:last-child{margin-bottom:0}
 
